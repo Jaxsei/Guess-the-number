@@ -2,33 +2,32 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title></title>
-  <link href="style.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Guess My Number!</title>
+    <link href="style.css" rel="stylesheet">
 </head>
 
 <body>
-  <div class="firstContainer">
-    <div class="setContainer">
-      <h1>Guess My Number!</h1>
-      <p>Guess A Random Number</p>
-      <input type="number" placeholder="Enter min" min="1" id="minInput">
-      <input type="number" placeholder="Enter max" min="10" id="maxInput">
-      <button onclick="generateRandNum();">Set Target</button>
+    <div class="firstContainer">
+        <div class="setContainer">
+            <h1>Guess My Number!</h1>
+            <p>Guess A Random Number</p>
+            <input type="number" placeholder="Enter min" min="1" id="minInput">
+            <input type="number" placeholder="Enter max" min="10" id="maxInput">
+            <button onclick="generateRandNum();">Set Target</button>
+        </div>
     </div>
-  </div>
 
-  <div class="secondContainer">
-    <div class="guessContainer">
-      <h1>Enter A Number And Press Guess:</h1>
-      <input type="number" placeholder="Your guess:" min="1" id="userInput">
-      <button onclick="userInputCompare();">Guess</button><br><br>
-      <label id="result"></label>
+    <div class="secondContainer">
+        <div class="guessContainer">
+            <h1>Enter A Number And Press Guess:</h1>
+            <input type="number" placeholder="Your guess:" min="1" id="userInput">
+            <button onclick="userInputCompare();">Guess</button><br><br>
+            <label id="result"></label>
+        </div>
     </div>
-  </div>
-  <script src="index.js">
-  </script>
+    <script src="index.js"></script>
 </body>
 
 </html>

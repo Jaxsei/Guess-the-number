@@ -1,26 +1,22 @@
-//Guessing Game
+// Guessing Game
 
-//Random number Generation
+let randNum;
 
+// Random number generation
 function generateRandNum() {
-  let minNum = document.getElementById("minInput").value;
-  let maxNum = document.getElementById("maxInput").value;
-  let randNum = Math.floor(Math.random() * (maxNum - minNum + 1)) + minNum;
+    let minNum = parseInt(document.getElementById("minInput").value);
+    let maxNum = parseInt(document.getElementById("maxInput").value);
 
-  return randNum;
+    randNum = Math.floor(Math.random() * (maxNum - minNum + 1)) + minNum;
 }
 
-let randNum = generateRandNum();
+// Comparing user input and displaying output
+function userInputCompare() {
+    let userInput = parseInt(document.getElementById("userInput").value);
 
-// comparing userInput and displaying output
-
-function UserInputCompare() {
-  let userInput = parseInt(document.getElementById("userInput").value);
-
-  if (userInput !== randNum) {
-    document.getElementById("result").innerText = `Wrong guess! It was ${randNum}.`
-  }
-  else {
-    document.getElementById("result").innerText = `Correct guess! It was ${randNum}.`
-  }
+    if (userInput !== randNum) {
+        document.getElementById("result").innerText = `Wrong guess! It was ${randNum}.`;
+    } else {
+        document.getElementById("result").innerText = `Correct guess! It was ${randNum}.`;
+    }
 }
